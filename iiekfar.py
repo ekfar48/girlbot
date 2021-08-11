@@ -161,7 +161,8 @@ def girl(spam,str,id):
             super_text = f'{she_work[randint(0,len(she_work)-1)]}'
         else:
             super_text = f'{she_what[randint(0,len(she_what)-1)]}'
-    print(super_text)
+    some_text = super_text
+    send_some_msg(id, some_text)
     spam = str
     
 for event in longpool.listen():
