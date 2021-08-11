@@ -7,23 +7,10 @@ from random import randint
 vk_session = vk_api.VkApi(token='')
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)
-#живая сука
-#name = 'Никита'
 spam = 'spam'
 def send_some_msg(id, some_text):
     vk_session.method("messages.send", {"user_id":id, "message":some_text,"random_id":0})
-print("Привет я Аня.Давай поговорим.")
-
 def girl(spam,str,id):
-    #str = input()
-#angry_level = 100
-#100 = middle ; 50 = недоверие ; 0 = уничтожить
-#из json лучше бери
-#with open('chiksaekfara.json') as file:
-    #data = json.load(file)
-    #for xx in data:
-        #print(xx)
-
     what_work = ['что делаешь','чем занята']
     words = ['давай','дальше','?']
     what = ['ну как','нравиться','что думаешь','оцени','ну что','как тебе']
@@ -178,8 +165,6 @@ def girl(spam,str,id):
             super_text = f'{she_what[randint(0,len(she_what)-1)]}'
     print(super_text)
     spam = str
-    #girl(spam)
-#girl(spam)
     
 for event in longpool.listen():
     if event.type == VkEventType.MESSAGE_NEW:
