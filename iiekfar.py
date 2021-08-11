@@ -2,7 +2,7 @@ import os
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 from random import randint
-vk_session = vk_api.VkApi(os.environ['token'])
+vk_session = vk_api.VkApi(str(os.environ['token']))
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)
 spam = 'spam'
