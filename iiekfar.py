@@ -1,10 +1,7 @@
+import os
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 from random import randint
-import os
-#import json
-#import os
-#import datetime
 vk_session = vk_api.VkApi(os.environ['token'])
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)
