@@ -4,7 +4,7 @@ from random import randint
 #import json
 #import os
 #import datetime
-vk_session = vk_api.VkApi(token='')
+vk_session = vk_api.VkApi(os.environ['token'])
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)
 spam = 'spam'
@@ -36,7 +36,7 @@ def girl(spam,str,id):
     she_citi = ['я из России','круто я из Москвы','я не пойду с тобой гулять','зачем тебе знать это?','улица пушкина дом колотушкина']
     she_work = ['смотрю телик','мемы листаю','мою посуду','ем','отдыхаю','дремлю']
     she_ask = ['как дела','что делаешь','почему ты мне не пишешь','я скучаю по тебе']
-    she_about = ['я аня','я робот','я твой ночной кошмар']
+    she_about = ['я аня','я робот','я твой ночной кошмар','я настя','я полина']
     
     _hi = False
     _bad = False
