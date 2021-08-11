@@ -1,4 +1,2 @@
 vk==2.0.2
 vk-api==11.9.4
-vkbottle==3.0
-vkbottle-types==0.1.24
